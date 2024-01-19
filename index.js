@@ -253,8 +253,7 @@ async function serverData ({
 
   MudiExperience({
     tokenApi:'h3AvHAq2S5ASfVpU8zFz',
-    //skuNumber:document.querySelector('.vtex-product-identifier-0-x-product-identifier__value').innerHTML,
-    skuNumber:'pruebaColombia',
+    skuNumber:document.querySelector('.vtex-product-identifier-0-x-product-identifier__value').innerHTML,
     idCompanyMudi:396,
     color:'#c41230',
     containerBtns:document.querySelector('.vtex-store-components-3-x-productImagesGallerySwiperContainer'),

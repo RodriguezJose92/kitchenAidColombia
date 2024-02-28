@@ -251,11 +251,14 @@ async function serverData ({
     sendDataLayer({sku:skuNumber})
   };
 
-  MudiExperience({
+setTimeout(()=>{
+      MudiExperience({
     tokenApi:'h3AvHAq2S5ASfVpU8zFz',
-    skuNumber:document.querySelector('.vtex-product-identifier-0-x-product-identifier__value').innerHTML,
+    skuNumber:document.querySelector('.vtex-product-identifier-0-x-product-identifier__value').innerHTML+"_COL",
     idCompanyMudi:396,
     color:'#c41230',
     containerBtns:document.querySelector('.vtex-store-components-3-x-productImagesGallerySwiperContainer'),
     zIndexModal:1000000,
   })
+},2000)
+

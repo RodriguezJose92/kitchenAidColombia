@@ -187,45 +187,6 @@ async function serverData ({
         sistemaOperativo:OSdevice
     });
 
-    /** Evento de intención de compra */
-    document.querySelector('body > div.render-container.render-route-store-product > div > div.vtex-store__template.bg-base > div > div > div > div:nth-child(3) > div > div > section > div.ambientegourmet-components-2-x-containerLayout > div.ambientegourmet-components-2-x-containerLayout.ambientegourmet-components-2-x-containerLayout--pdp-info__container > div.ambientegourmet-components-2-x-containerLayout.ambientegourmet-components-2-x-containerLayout--product-info--container > div.ambientegourmet-components-2-x-stockContainerRender > div > div.ambientegourmet-components-2-x-containerLayout.ambientegourmet-components-2-x-containerLayout--pdp-selector-add-container > button').addEventListener('click',()=>{
-        dataLayer.push({
-            event:'Evento de intención de compra Mudi',
-            valorMudi:1,
-            sku:sku,
-            categoria:document.querySelectorAll('.ambientegourmet-breadcrumb-2-x-link')[2] ? document.querySelectorAll('.ambientegourmet-breadcrumb-2-x-link')[2].innerHTML : 'null',
-            subCategoria:document.querySelectorAll('.ambientegourmet-breadcrumb-2-x-link')[3] ? document.querySelectorAll('.ambientegourmet-breadcrumb-2-x-link')[3].innerHTML : 'null',
-            seccion:document.querySelectorAll('.ambientegourmet-breadcrumb-2-x-link')[4] ? document.querySelectorAll('.ambientegourmet-breadcrumb-2-x-link')[4].innerHTML : 'null',
-            sistemaOperativo:OSdevice
-        })
-    },false);
-
-    /** Evento de interación AR Mudi */
-    document.getElementById('btnMudiAR').addEventListener('click',()=>{
-        dataLayer.push({
-            event:'Evento de interacción AR Mudi',
-            valorMudi:1,
-            sku:sku,
-            categoria:document.querySelectorAll('.ambientegourmet-breadcrumb-2-x-link')[2] ? document.querySelectorAll('.ambientegourmet-breadcrumb-2-x-link')[2].innerHTML : 'null',
-            subCategoria:document.querySelectorAll('.ambientegourmet-breadcrumb-2-x-link')[3] ? document.querySelectorAll('.ambientegourmet-breadcrumb-2-x-link')[3].innerHTML : 'null',
-            seccion:document.querySelectorAll('.ambientegourmet-breadcrumb-2-x-link')[4] ? document.querySelectorAll('.ambientegourmet-breadcrumb-2-x-link')[4].innerHTML : 'null',
-            sistemaOperativo:OSdevice
-        })
-    },false);
-
-    /** Evento de interación 3D Mudi */
-    document.getElementById('btnMudi3D').addEventListener('click',()=>{
-        dataLayer.push({
-            event:'Evento de interacción 3D Mudi',
-            valorMudi:1,
-            sku:sku,
-            categoria:document.querySelectorAll('.ambientegourmet-breadcrumb-2-x-link')[2] ? document.querySelectorAll('.ambientegourmet-breadcrumb-2-x-link')[2].innerHTML : 'null',
-            subCategoria:document.querySelectorAll('.ambientegourmet-breadcrumb-2-x-link')[3] ? document.querySelectorAll('.ambientegourmet-breadcrumb-2-x-link')[3].innerHTML : 'null',
-            seccion:document.querySelectorAll('.ambientegourmet-breadcrumb-2-x-link')[4] ? document.querySelectorAll('.ambientegourmet-breadcrumb-2-x-link')[4].innerHTML : 'null',
-            sistemaOperativo:OSdevice
-        })
-    },false);
-
   };
   
   // Función Main Mudi --

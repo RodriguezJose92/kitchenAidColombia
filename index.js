@@ -61,7 +61,7 @@ async function serverData ({
     father.appendChild(containerPrincipalBtns)
   
     setTimeout(()=>{
-      const tool = document.querySelector('.showTooltipInit');
+      const tool = containerPrincipalBtns.querySelector('.showTooltipInit');
       tool.classList.remove('showTooltipInit')
       tool.classList.add('hideTooltip')
     },10000)
